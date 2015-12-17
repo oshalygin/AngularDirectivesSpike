@@ -1,0 +1,27 @@
+{
+  "name": "angular-directives-spike",
+  "version": "1.0.0",
+  "description": "In depth view at angular directives",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshalygin/AngularDirectivesSpike.git"
+  },
+  "keywords": [
+    "angular",
+    "directives"
+  ],
+  "author": "oshalygin@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oshalygin/AngularDirectivesSpike/issues"
+  },
+  "homepage": "https://github.com/oshalygin/AngularDirectivesSpike#readme"
+}
