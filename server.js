@@ -8,13 +8,13 @@ application.get("/", function (request, response) {
 });
 
 application.use(express.static("wwwroot"));
-application.use(express.static("node_modules"));
-application.use(express.static("bower_components"));
+application.use("/node_modules", express.static(__dirname + "/node_modules"));
+application.use("/bower_components", express.static(__dirname + "/bower_components"));
 
 var server = application.listen(9999, function () {
-    var host = server.address().address;
+
     var port = server.address().port;
 
-    console.log("Listening on http://%s:%s", host, port);
+    console.log("Listening on http://localhost:%s", port);
 
 });
