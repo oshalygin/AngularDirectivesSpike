@@ -1,0 +1,25 @@
+{
+  "name": "angular-directives-spike",
+  "description": "In depth view at angular directives",
+  "main": "app.js",
+  "authors": [
+    "oshalygin@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "directives"
+  ],
+  "homepage": "https://github.com/oshalygin/AngularDirectivesSpike",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5"
+  }
+}
