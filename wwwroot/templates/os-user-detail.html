@@ -1,0 +1,22 @@
+<div if="true" class="panel panel-primary">
+    <div class="panel-heading">{{vm.user.name}}</div>
+    <div class="panel-body">
+        <div ng-show="!!vm.user.address">
+            <h4>Address: </h4>{{vm.user.address.street}} <br> {{vm.user.address.city}} <br> {{vm.user.address.state}}
+        </div>
+        <br>
+        <div>
+            <h4>Friends: </h4>
+            <ul>
+                <li ng-repeat="friend in vm.user.friends">
+                    {{friend}}
+                </li>
+            </ul>
+        </div>
+        <div ng-show="!!user.rank">
+            <h4>Rank: </h4>
+            <span>{{user.rank}}</span>
+        </div>
+        <button ng-show="!user.rank" class="bnt btn-success" ng-click="knightMe(vm.user)">Knight</button>
+    </div>
+</div>
