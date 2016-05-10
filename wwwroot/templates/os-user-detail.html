@@ -13,10 +13,10 @@
                 </li>
             </ul>
         </div>
-        <div ng-show="!!user.rank">
+        <div ng-show="!!vm.user.rank">
             <h4>Rank: </h4>
-            <span>{{user.rank}}</span>
+            <span style="color:green">{{vm.user.rank}}</span>
         </div>
-        <button ng-show="!user.rank" class="btn btn-success" ng-click="knightMe(vm.user)">Knight</button>
+        <button ng-show="!vm.user.rank" class="btn btn-success" ng-click="vm.knightMe(vm.user)">Knight Me</button>
     </div>
 </div>

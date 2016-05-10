@@ -6,7 +6,7 @@
 
 <body ng-app="application" class="container" style="padding-top:30px">
     <div ng-controller="MainController as vm">
-        <os-user-detail>></os-user-detail>
+        <os-user-detail user="vm.user"></os-user-detail>
 
     </div>
 
@@ -16,6 +16,7 @@
 
     <script src="application.js"></script>
     <script src="main.controller.js"></script>
+    <script src="osUserDetail.controller.js"></script>
     <script src="osUserDetail.directive.js"></script>
 
 </body>

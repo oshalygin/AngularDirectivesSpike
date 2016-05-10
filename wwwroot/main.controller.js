@@ -18,10 +18,6 @@
                 "Han Solo"
             ]
         };
-        
-        vm.knightMe = function (user) {
-            vm.user.rank = "knight";
-        }
     }
 
 })();
