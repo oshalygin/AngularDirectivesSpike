@@ -6,8 +6,8 @@
 
 <body ng-app="application" class="container" style="padding-top:30px">
     <div ng-controller="MainController as vm">
-        <os-user-detail user="vm.user"></os-user-detail>
-
+        <os-user-detail user="vm.userOleg"></os-user-detail>
+        <os-user-detail user="vm.userCarlota" collapsed="false"></os-user-detail>
     </div>
 
 
@@ -17,7 +17,11 @@
     <script src="application.js"></script>
     <script src="main.controller.js"></script>
     <script src="osUserDetail.controller.js"></script>
+    <script src="osAddressDetail.controller.js"></script>
+    <script src="osRemoveFriend.controller.js"></script>
     <script src="osUserDetail.directive.js"></script>
+    <script src="osAddressDetail.directive.js"></script>
+    <script src="osRemoveFriend.directive.js"></script>
 
 </body>
 

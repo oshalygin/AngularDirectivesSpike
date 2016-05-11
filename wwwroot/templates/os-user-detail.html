@@ -1,15 +1,14 @@
 <div if="true" class="panel panel-primary">
-    <div class="panel-heading">{{vm.user.name}}</div>
-    <div class="panel-body">
-        <div ng-show="!!vm.user.address">
-            <h4>Address: </h4>{{vm.user.address.street}} <br> {{vm.user.address.city}} <br> {{vm.user.address.state}}
-        </div>
+    <div class="panel-heading" ng-click="vm.collapse()">{{vm.user.name}}</div>
+    <div class="panel-body" ng-hide="vm.collapsed">
+        <os-address-detail user="vm.user" />
         <br>
         <div>
             <h4>Friends: </h4>
             <ul>
                 <li ng-repeat="friend in vm.user.friends">
                     {{friend}}
+                    <os-remove-friend friend="friend" method="vm.removeFriend(friend)"></os-remove-friend>
                 </li>
             </ul>
         </div>

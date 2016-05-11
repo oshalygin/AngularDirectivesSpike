@@ -1,0 +1,8 @@
+<div>
+    <div ng-show="!!vm.user.address && !vm.collapsed" ng-click="vm.collapse()">
+        <h4>Address: </h4>{{vm.user.address.street}} <br> {{vm.user.address.city}} <br> {{vm.user.address.state}}
+    </div>
+    <div ng-show="!!vm.user.address && vm.collapsed" ng-click="vm.expand()">
+        <h4>Address: </h4>{{vm.user.address.state}}... <br>
+    </div>
+</div>
